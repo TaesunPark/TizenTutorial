@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="4.0" package="org.example.sensoraccelerator" version="1.0.0">
+	<profile name="wearable" />
+	<ui-application appid="org.example.sensoraccelerator" exec="sensoraccelerator" type="capp" multiple="false" taskmanage="true" nodisplay="false">
+		<icon>sensoraccelerator.png</icon>
+		<label>sensoraccelerator</label>
+	</ui-application>
+</manifest>
