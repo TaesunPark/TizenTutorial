@@ -1,0 +1,5 @@
+set sysroot D:/TizenSDK/platforms/tizen-4.0/wearable/rootstraps/wearable-4.0-emulator.core
+set debug-file-directory D:/TizenSDK/platforms/tizen-4.0/wearable/rootstraps/wearable-4.0-emulator.core/usr/lib/debug
+set solib-search-path D:/workspace/testUI/Debug
+dir D:/TizenSDK/platforms/tizen-4.0/wearable/rootstraps/wearable-4.0-emulator.core/usr/src/debug
+sharedlibrary

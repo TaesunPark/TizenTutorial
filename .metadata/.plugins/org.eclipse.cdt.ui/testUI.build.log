@@ -1,0 +1,9 @@
+23:58:39 **** Incremental Build of configuration Debug for project testUI ****
+ninja all 
+[1/2] Building src/testui.o
+clang.exe: warning: -Wl,--hash-style=gnu: 'linker' input unused [-Wunused-command-line-argument]
+
+[2/2] Linking testui
+
+23:58:46 Build Finished (took 6s.767ms)
+
