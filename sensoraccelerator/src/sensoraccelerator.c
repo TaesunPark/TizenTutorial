@@ -1,10 +1,20 @@
 #include "sensoraccelerator.h"
+#include <sensor.h>
 
 typedef struct appdata {
 	Evas_Object *win;
 	Evas_Object *conform;
-	Evas_Object *label;
+	Evas_Object *label0; // 가속도 센서를 지원하는 지 여부
+	Evas_Object *label1; // 현재 가속도
+	Evas_Object *label2; // 최대 가속도
 } appdata_s;
+
+typedef struct _sensor_info {
+	sensor_h sensor; /* Sensor handle */
+	sensor_listener_h sensor_listener; /* Sensor listener*/
+} sensorinfo_s;
+
+static sensorinfo_s sensor_info;
 
 static void
 win_delete_request_cb(void *data, Evas_Object *obj, void *event_info)
@@ -19,6 +29,33 @@ win_back_cb(void *data, Evas_Object *obj, void *event_info)
 	/* Let window go to hide state. */
 	elm_win_lower(ad->win);
 }
+
+/*센서 지원하는 지 여부*/
+static void
+show_is_supported(appdata_s *ad){
+	char buf[PATH_MAX];
+	bool is_supported = false;
+	sensor_is_supported(SENSOR_ACCELEROMETER, &is_supported);
+	sprintf(buf, "1111111%s", is_supported ? "support" : "not support");
+	elm_object_text_set(ad->label0, buf);
+}
+
+static void
+my_box_pack(Evas_Object *box, Evas_Object *child, double h_weight, double v_weight, double h_align, double v_align){
+
+	/* Tell the child packed into the box to be able to expand */
+	evas_object_size_hint_weight_set(child, h_weight, v_weight);
+	/* Fill the expanded area (above) as opposed to centering in it*/
+	evas_object_size_hint_align_set(child, h_align, v_align);
+	/* Set the child as the box content and show it */
+	 evas_object_show(child);
+	 elm_object_content_set(box, child);
+	 /* Put the child into the box */
+	 elm_box_pack_end(box, child);
+	 /* Show the box */
+	 evas_object_show(box);
+}
+
 
 static void
 create_base_gui(appdata_s *ad)
@@ -48,16 +85,28 @@ create_base_gui(appdata_s *ad)
 	elm_win_resize_object_add(ad->win, ad->conform);
 	evas_object_show(ad->conform);
 
-	/* Label */
-	/* Create an actual view of the base gui.
-	   Modify this part to change the view. */
-	ad->label = elm_label_add(ad->conform);
-	elm_object_text_set(ad->label, "<align=center>Hello Tizen</align>");
-	evas_object_size_hint_weight_set(ad->label, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
-	elm_object_content_set(ad->conform, ad->label);
+	/* Box can contain other elements in a vertical line (by default) */
+	Evas_Object *box = elm_box_add(ad->win);
+	evas_object_size_hint_weight_set(box, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	evas_object_size_hint_align_set(box, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
+	elm_object_content_set(ad->conform, box);
+	evas_object_show(box);
+
+	/* First label (for the sensor support) */
+	ad->label0 = elm_label_add(ad->conform);
+	elm_object_text_set(ad->label0, "Msg -");
+	my_box_pack(box, ad->label0, 1.0, 0.0, -1.0, -1.0);
+
+	/* Second label (for the current acceleration value) */
+	ad->label1 = elm_label_add(ad->conform);
+	elm_object_text_set(ad->label1, "Value -");
+	my_box_pack(box, ad->label1, 1.0, 1.0, -1.0, -1.0);
 
 	/* Show window after base gui is set up */
 	evas_object_show(ad->win);
+
+	/* Check the sensor support */
+	show_is_supported(ad);
 }
 
 static bool

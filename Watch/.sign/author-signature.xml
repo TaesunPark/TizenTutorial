@@ -2,20 +2,20 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
-<Reference URI="bin%2Ftestui">
+<Reference URI="bin%2Fwatch">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>tEWzW/ZYIZquY/F4N1QanaCuat55BNjk6wJ2jedhvbFxCtQiwLWwTa9DKjE47HT+SogWo7E1zr23
-95HRU8SluA==</DigestValue>
+<DigestValue>uCLuXTpwi2O6h3FcvoQNUPznBHiRCGEWoGinIA0/GhjSNfZ/iQ6KmpaG2DxSJ9S2qFzO18sFTnX9
+T8tRaGjsFQ==</DigestValue>
 </Reference>
-<Reference URI="shared%2Fres%2Ftestui.png">
+<Reference URI="shared%2Fres%2Fwatch.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>BTGBG483ma/3HgWnreWF2xbdzr4F0gTRWjwxoSV+7kKBWt4UJTuv5WE4DhKdU4in2kwn/55O/qPD
 bNc/wgCuGg==</DigestValue>
 </Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>1x5IEGd6w1/yiX0V2LNoB9J8PN1l8JiRptKG5iPtyNcpb8hLlArApUBUy8bcU8JhjAMkHSJLutIp
-d5RBsphUhA==</DigestValue>
+<DigestValue>l4Ozl7e2UYW2qK6hLBAIv4l3L5erFEyXwQJEqiP3F8KZX3/aUkx3am6HkDoHgsmhL+LmPCsTR1li
+X5n+d/hdtw==</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -27,11 +27,11 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-hSqWZ2imDpf4WZuFvnoqcGXAoOzyA9vdH7JNLMWdEvHrn3QxYN6Agi7wi27Kyehyag+/jLVJBLPk
-UYCpQEV6UrCpBLj4j1rsjch6AzepXLrGHD1ERqw+TjX6Ailg06mzQVIOAuDUl60m9q8VUMmPd+OX
-AF0P5b225tyKV1BuNzG/aIkwmQTHIMpohkTga+Q4NZtGoaiJ3DDu+TRRu/xz4b4tZI6HNou7H92X
-xZF0Hg9Dzf0KVEsyOWuZ+KuK78Y6y34hgewNqQEW9NFGyYhkCVcPLD6N4b9Ti0jL2iw7FV+fn4Pa
-OSvPQe0DVVRJzU0tM0JIvjE2eXLd+tfpO+LxPQ==
+Il8dwvPJgYyEf6Wtr0j3CAo6AgIcyMlmt17NUBVvJMVxjL+1PpFaDy2gZHlxYxR7PqRn4TU2b0jy
+Qh6v/E0iXtcDlCMAE9hSfttgrGy/9SM+dyMNcKMMhKEwOhC7pAapwjtN/M85RRQx6i7hcn4GunYb
+6kd0s42tg/IqQEiwd+oSZQlzYqptwPPRPSvFFmCW121HqdnEA6iwLVa9LSBLlzqqWyO5nbOCGC4r
+zzXBjv3wdLYXx2YMqmEoHoaP8HLT7NtkhgrCQzlLw0kvl+rWeGi+4+FJnFU9LSlrs71LChpwpaxU
+gN5Gq2RQn5EhlP6eIaKsUKDB25BC7QZ/UPvjPg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

@@ -2,20 +2,20 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
-<Reference URI="bin%2Ftestui">
+<Reference URI="bin%2Fsensoraccelerator">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>tEWzW/ZYIZquY/F4N1QanaCuat55BNjk6wJ2jedhvbFxCtQiwLWwTa9DKjE47HT+SogWo7E1zr23
-95HRU8SluA==</DigestValue>
+<DigestValue>se7b2djLQkiO0TSQrQPrA56jCoeW5DqMnfghd8n/A5ZQUoq9wyMvoMqWYI0ezghxLtEw5Ql5hVpH
+3PKqb+C76Q==</DigestValue>
 </Reference>
-<Reference URI="shared%2Fres%2Ftestui.png">
+<Reference URI="shared%2Fres%2Fsensoraccelerator.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
 <DigestValue>BTGBG483ma/3HgWnreWF2xbdzr4F0gTRWjwxoSV+7kKBWt4UJTuv5WE4DhKdU4in2kwn/55O/qPD
 bNc/wgCuGg==</DigestValue>
 </Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>1x5IEGd6w1/yiX0V2LNoB9J8PN1l8JiRptKG5iPtyNcpb8hLlArApUBUy8bcU8JhjAMkHSJLutIp
-d5RBsphUhA==</DigestValue>
+<DigestValue>5eHbfsmwLuwnGJ4WQWi7WYoLLvMOlPfrq5je76IijhRZU8WhV9wCxxVIumz1FGiBgC84vwUAII9+
+KA32ETxMhQ==</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -27,11 +27,11 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-hSqWZ2imDpf4WZuFvnoqcGXAoOzyA9vdH7JNLMWdEvHrn3QxYN6Agi7wi27Kyehyag+/jLVJBLPk
-UYCpQEV6UrCpBLj4j1rsjch6AzepXLrGHD1ERqw+TjX6Ailg06mzQVIOAuDUl60m9q8VUMmPd+OX
-AF0P5b225tyKV1BuNzG/aIkwmQTHIMpohkTga+Q4NZtGoaiJ3DDu+TRRu/xz4b4tZI6HNou7H92X
-xZF0Hg9Dzf0KVEsyOWuZ+KuK78Y6y34hgewNqQEW9NFGyYhkCVcPLD6N4b9Ti0jL2iw7FV+fn4Pa
-OSvPQe0DVVRJzU0tM0JIvjE2eXLd+tfpO+LxPQ==
+b/nYdPcVO9o0fBIhdM45Dyi9Yi8siTdn+JW972UoEm6/VMpmlJb0JalJcVw7FEmhNRaRJhUepmPJ
+aSqPg007lE7bk2Nqxs6OKiB0682zdqgLzDYjwR6Y+r2HQesmzJgQjbSqAXKV7kM4b6K4y3/BBueM
+xjFNXNw2Kfbv+cOOu/ig1oG9HJzN2IS8bk47YFF845tEog+ZosKl3Q7N46BdP9qRY/HWE7io++33
+Ald+3N2FX6DM9jj7XASu0dXqHioS+o1egVIEUajlUxZHPl6qVVmg2nZk2UZaTDgZLvFraOe3kAVX
+3bxDHlt9lM3fj8nWNSFPdRFf16LGW7H6bzkS1A==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

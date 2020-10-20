@@ -73,6 +73,8 @@ create_base_gui(appdata_s *ad)
            Create and initialize elm_conformant, which is mandatory for the base GUI
            to have a proper size when an indicator or virtual keypad is visible
 	        */
+
+
         ad->conform = elm_conformant_add(ad->win);
         elm_win_indicator_mode_set(ad->win, ELM_WIN_INDICATOR_SHOW);
         elm_win_indicator_opacity_set(ad->win, ELM_WIN_INDICATOR_OPAQUE);
