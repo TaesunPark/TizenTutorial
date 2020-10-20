@@ -56,6 +56,42 @@ my_box_pack(Evas_Object *box, Evas_Object *child, double h_weight, double v_weig
 	 evas_object_show(box);
 }
 
+static void
+_new_sensor_value(sensor_h sensor, sensor_event_s *sensor_data, void *user_data)
+{
+	if (sensor_data->value_count < 3)
+
+	    return;
+
+	char buf[PATH_MAX];
+
+	appdata_s *ad = (appdata_s*)user_data;
+
+	sprintf(buf, "Value -X : %0.1f / Y : %0.1f / Z : %0.1f",
+	        sensor_data->values[0], sensor_data->values[1], sensor_data->values[2]);
+	elm_object_text_set(ad->label1, buf);
+
+	dlog_print(DLOG_INFO, "test_X", "%0.1f" ,sensor_data->values[0]);
+
+	dlog_print(DLOG_INFO, "test_Y", "%0.1f" ,sensor_data->values[1]);
+
+	dlog_print(DLOG_INFO, "test_Z", "%0.1f" ,sensor_data->values[2]);
+}
+
+static void
+start_accelerator_sensor(appdata_s *ad)
+{
+	sensor_error_e err = SENSOR_ERROR_NONE;
+
+	sensor_get_default_sensor(SENSOR_ACCELEROMETER, &sensor_info.sensor);
+
+	err = sensor_create_listener(sensor_info.sensor, &sensor_info.sensor_listener);
+
+	sensor_listener_set_event_cb(sensor_info.sensor_listener, 100, _new_sensor_value, ad);
+
+	sensor_listener_start(sensor_info.sensor_listener);
+
+}
 
 static void
 create_base_gui(appdata_s *ad)
@@ -107,6 +143,7 @@ create_base_gui(appdata_s *ad)
 
 	/* Check the sensor support */
 	show_is_supported(ad);
+	start_accelerator_sensor(ad); // 이벤트 함수 설정
 }
 
 static bool

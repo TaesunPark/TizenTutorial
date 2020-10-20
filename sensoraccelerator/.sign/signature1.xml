@@ -4,13 +4,13 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>/41YvSTdrTA6W7mrIPKd/wxfnXfM61gImZNjcADeqerGPtwVRmFgJVIV0t3ORwTAhhYGA/hYucmk
-ivMDaqqtzA==</DigestValue>
+<DigestValue>tfLssPmvDgOIIqLRlA9z9/Uus434TPihGW6hUlBY00xtUCWatG2ke505kXtzVktetkyHKQlK9vI3
+4R1imczPmQ==</DigestValue>
 </Reference>
 <Reference URI="bin%2Fsensoraccelerator">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>se7b2djLQkiO0TSQrQPrA56jCoeW5DqMnfghd8n/A5ZQUoq9wyMvoMqWYI0ezghxLtEw5Ql5hVpH
-3PKqb+C76Q==</DigestValue>
+<DigestValue>i6j0Y7P8wVNyPuQBxVQoM+bvRGvWGJMvPq3AppMcDbDoxXduG2mEkHcSTyKD/shO3TXlhsNiO4qJ
+ChU8JTqffA==</DigestValue>
 </Reference>
 <Reference URI="shared%2Fres%2Fsensoraccelerator.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -32,11 +32,11 @@ GyvKX9Snig==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-p98b1kO0YESafKBNwqrfE/y/2xikmZMv4KQPyuks8cPKO7ScnJdWNUMMXnffljWKyl5HzIk/mIb7
-5LH6I3HomUKI1f6TDp7zg9sB2Gh2UpkJHaJBSkMYYCYSDHmh7gswCgzEwNuAhEfr2dWPLOiXkt9c
-mUn5PCbihi4xXkNPorNvX29VnDVvGC4xPZMwe65S+R6wW8NvmNggflCLG0oN2WFNa0SRDEUBg0GV
-ci3uC6p0Ff/i1sX0x9e9Dla7ZXUnR56akWhf0emaoTZmgi8A3xZHXqQ6QSgtvFU/l+NVnFm7VCNT
-42aVpAeOWy4eimhqGIMBhR1subtDGL2jN5BxHQ==
+dxt8wk9NZs+s2yUe5q0Oizl/VpQvTM4bKtQ264nqOxTOUzqgbV1FBNONcmTfGjbwRikDx7VnCCLP
+mWAkCUIZJghWt/k00cTaRv3NtXRcFcRMa6XFwrrOijrJCbWdf7C1wqlx8xM9y4uMLYR2Fr4cc2mv
+InkeBQC1Zy0NWQZYrMQMiYGOBCtuaoE1M8g48u4GcnbpuI5uVOcixfEgQ892huWFo4ZzUZu3qprd
+bnAgrg7WRd9yEccOAPvMZg89uv+oPbMz+yZLS5ygyT4ZWIhXE2PZGWHux0GA0L9LiYvIXfkDs5wV
+1jbtX4+8UH5Qki4CEo5+eXoh0AX0aOtPqg2urg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>

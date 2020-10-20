@@ -4,8 +4,8 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
 <Reference URI="bin%2Fsensoraccelerator">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
-<DigestValue>se7b2djLQkiO0TSQrQPrA56jCoeW5DqMnfghd8n/A5ZQUoq9wyMvoMqWYI0ezghxLtEw5Ql5hVpH
-3PKqb+C76Q==</DigestValue>
+<DigestValue>i6j0Y7P8wVNyPuQBxVQoM+bvRGvWGJMvPq3AppMcDbDoxXduG2mEkHcSTyKD/shO3TXlhsNiO4qJ
+ChU8JTqffA==</DigestValue>
 </Reference>
 <Reference URI="shared%2Fres%2Fsensoraccelerator.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
@@ -27,11 +27,11 @@ QY10fG1EWQ==</DigestValue>
 </Reference>
 </SignedInfo>
 <SignatureValue>
-b/nYdPcVO9o0fBIhdM45Dyi9Yi8siTdn+JW972UoEm6/VMpmlJb0JalJcVw7FEmhNRaRJhUepmPJ
-aSqPg007lE7bk2Nqxs6OKiB0682zdqgLzDYjwR6Y+r2HQesmzJgQjbSqAXKV7kM4b6K4y3/BBueM
-xjFNXNw2Kfbv+cOOu/ig1oG9HJzN2IS8bk47YFF845tEog+ZosKl3Q7N46BdP9qRY/HWE7io++33
-Ald+3N2FX6DM9jj7XASu0dXqHioS+o1egVIEUajlUxZHPl6qVVmg2nZk2UZaTDgZLvFraOe3kAVX
-3bxDHlt9lM3fj8nWNSFPdRFf16LGW7H6bzkS1A==
+Yz5MT2yHw4QJrVJC06PIq2bFoE5fUTE7y1vsZCHgdBWET7BiIy13ZbFDojN8s8/q0INUeOeUqLFf
+H5vhonU2unu2emPKgiD+IGgk3FgZAIAexXHAE/xDuxUptzbVvARGVM0m0kB1VRUxcnGOYXshRSCw
+C+oKa9Q4Cek3tuvETp/V8TzfeTAe+LCHxwMMisVvbKHVm0ROKtXmEfPQmnsnFGaNhgu5jPfCFivh
+4/s0qvKE4i/6hB5ZgmIHvp1uhQHtGL7yAAXKKt96xtOF0LeEv/ETijJCtAULwRYGbufbn9Czt0RR
+H9M+F5xjbDxxV+x+AYY2OkhCYq9ohP2cz9RNlg==
 </SignatureValue>
 <KeyInfo>
 <X509Data>
